@@ -1,0 +1,591 @@
+servers:
+  1:
+    name: server1.flexicloud.in
+    ip: 195.201.40.238
+    port: 22
+    dbtype: MYSQL
+    configs:
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    database:
+    db_excludes:
+    files:
+      - /var/www
+  3:
+    name: server1.letourister.com
+    ip: 159.69.144.148
+    port: 22
+    dbtype: MYSQL
+    configs:
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    database:
+    db_excludes:
+    files:
+      - /var/www
+  4:
+    name: server.simplifiedcoding.in
+    ip: 94.130.170.164
+    port: 22
+    dbtype: MYSQL
+    configs:
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    database:
+    db_excludes:
+    files:
+      - /var/www
+  5:
+    name: santhi.web.xyz
+    ip: 78.46.210.25
+    port: 22
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/mysql/my.cnf
+    database:
+    db_excludes:
+    files:
+      - /var/nodeproject
+  6:
+    name: server1.shop2m.com
+    ip: 134.209.147.197
+    port: 22
+    dbtype: MYSQL
+    configs:
+      - /etc/nginx
+      - /etc/apache2
+      - /etc/mysql
+    database:
+    db_excludes:
+    files:
+      - /var/www
+  8:
+    name: fleet-app
+    ip: 23.88.59.158
+    port: 22
+    dbtype: MYSQL
+    configs:
+      - /etc/httpd
+      - /etc/my.cnf.d
+      - /etc/my.cnf
+    database:
+    db_excludes:
+    files:
+      - /var/www
+      - /home
+  "9":
+    name: vultr-routestoroots
+    ip: 139.84.133.216
+    port: "22"
+    dbtype: MYSQL
+    dbtype: MYSQL
+    configs:
+      - /etc/nginx/
+      - /etc/mysql/my.cnf
+      - /etc/elasticsearch
+    databases: ' '
+    db_excludes:
+    files:
+      - /home
+      - /var/lib
+  "11":
+    name: vultr-mybaby
+    ip: 208.76.221.13
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    databases: ' '
+    db_excludes:
+    files:
+      - /var/www
+  "12":
+    name: server.mahalakshmisilks.com
+    ip: 65.20.72.239
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+      - /etc/varnish
+      - /etc/default
+    databases: ' '
+    db_excludes:
+    files:
+      - /home
+  "13":
+    name: web.orendapay.com
+    ip: 139.59.15.201
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    databases: ' '
+    db_excludes:
+    files:
+      - /var/www
+      - /etc/mysql
+  "14":
+    name: web1.forexplatinumtrading.com
+    ip: 45.76.118.20
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    databases: ' '
+    db_excludes:
+    files:
+      - /var/www
+      - /etc/nginx
+      - /etc/mysql
+      - /home
+  "15":
+    name: server.kjac.co.in
+    ip: 172.105.50.251
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    databases: ' '
+    db_excludes:
+    files:
+      - /home
+      - /opt
+  "16":
+    name: htz-bf-gis
+    ip: 195.201.40.84
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/postgresql
+    databases: ' '
+    db_excludes:
+    files:
+      - /home
+      - /opt
+  "17":
+    name: server.immocreate.ch
+    ip: 70.34.208.137
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+      - /etc/varnish
+      - /etc/default
+    databases: ' '
+    db_excludes:
+    files:
+      - /home
+  "18":
+    name: tall-winds
+    ip: 135.181.151.34
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    db_excludes:
+    databases: ' '
+    files:
+      - /home
+      - /opt
+  "19":
+    name: catexh-server
+    ip: 157.90.146.101
+    port: "22"
+    dbtype: MYSQL
+    db_excludes:
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/redis
+    databases: ' '
+    files:
+      - /home
+  "20":
+    name: vultr-fc-web
+    ip: 95.179.203.174
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+    databases:
+      - bukstk_db43
+    db_excludes:
+    files:
+      - /home/bukstackdocumentatie-cyvhe/bukstackdocumentatie.flexicloud.in/BookStack
+  "21":
+    name: vultr-vetpd
+    ip: 78.141.202.199
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /var/www
+  "22":
+    name: vultr-jeniestore
+    ip: 139.84.136.79
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /var/www
+  "25":
+    name: htz-simplifiedcoding
+    ip: 94.130.26.21
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /var/www
+  "26":
+    name: vultr-patroz
+    ip: 95.179.193.111
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/mysql.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "27":
+    name: Vultr-thescanner
+    ip: 144.202.2.100
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "28":
+    name: Vultr-thescanner
+    ip: 144.202.2.100
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "30":
+    name: Vultr-callforblessing
+    ip: 65.20.75.160
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "31":
+    name: vultr-taskmario
+    ip: 139.84.132.222
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - ""
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "32":
+    name: vultr-soothra
+    ip: 139.84.131.63
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - ""
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "33":
+    name: vultr-lexcllm
+    ip: 139.84.139.16
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - ""
+  "34":
+    name: vultr-echeapflights
+    ip: 95.179.200.34
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "35":
+    name: Vultr-race-energy
+    ip: 139.84.131.110
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "36":
+    name: beta-scanner-rp-sg
+    ip: 149.28.158.253
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "37":
+    name: Vultr-mlm
+    ip: 139.84.143.214
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /var/www
+      - /home
+  "38":
+    name: Htz-tellnot
+    ip: 88.198.171.120
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "39":
+    name: htz-immneos-135.181.101.111
+    ip: 135.181.101.111
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "40":
+    name: Vultr-thescanner-live-149.28.158.253
+    ip: 149.28.158.253
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "41":
+    name: vultr-satyaharaerp
+    ip: 139.84.138.109
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - ""
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - ""
+      - "/home"

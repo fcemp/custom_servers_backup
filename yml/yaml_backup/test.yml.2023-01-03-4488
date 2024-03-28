@@ -1,0 +1,16 @@
+servers:
+  "16":
+    name: htz-bf-gis
+    ip: 195.201.40.84
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/apache2
+      - /etc/nginx
+      - /etc/mysql/my.cnf
+      - /etc/postgresql
+    databases: ' '
+    db_excludes:
+    files:
+      - /home
+      - /opt
