@@ -10,8 +10,9 @@
 
 arg="$1"
 if [[ ! -f ${arg} ]]; then
-	echo "File doesn't exist!"
-	echo "Provide a valid servers.yaml file!"
+	echo "[x] -  File doesn't exist! Exiting..."
+	echo "[x] - Please provide a valid servers.yaml file as argument 1!"
+	exit
 else
 	echo "Taking server list from file ${arg}..."
 	YAML_FILE="${arg}"
