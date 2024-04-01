@@ -824,3 +824,15 @@ servers:
     db_excludes:
       - ""
       - ""
+  "58":
+    name: htz-tomcat-trip
+    ip: 65.109.224.13
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /usr/Tomcat5/conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /usr/Tomcat5
