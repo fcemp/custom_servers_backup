@@ -72,10 +72,14 @@ if [[ $# -eq 0 ]]; then
       echo "Listing currently listed servers in $YAML_FILE"
       server_details="$(list_servers)"
       echo "$server_details"
-      exit
+        spacing="    "
       echo "Saving server details to ${SINGLE_BACKUP_YAML}..."
       echo "${TOP_KEY}:" > ${SINGLE_BACKUP_YAML}
-      echo "${server_details}" >> ${SINGLE_BACKUP_YAML}
+	while read line; do
+		echo "${spacing}${line}" >> ${SINGLE_BACKUP_YAML}
+	done < <(echo "$server_details")
+	cat ${SINGLE_BACKUP_YAML}
+	exit
       /bin/bash ${SINGLE_SERVER_BACKUP_SCRIPT} "${SINGLE_BACKUP_YAML}"
 
 fi
