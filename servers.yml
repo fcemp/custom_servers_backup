@@ -836,3 +836,117 @@ servers:
     files:
       - /home
       - /usr/Tomcat5
+  "59":
+    name: htz-digitalgate-co
+    ip: 65.109.11.68
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /var/www
+  "60":
+    name: vultr-db-es-amb-temp
+    ip: 65.20.102.252
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home/
+  "61":
+    name: htz-blockvolt
+    ip: 49.13.232.129
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+    databases: ' '
+    db_excludes:
+      - ""
+    files:
+      - ""
+  "62":
+    name: htz-kiras-mikel
+    ip: 37.27.34.209
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home/
+      - /var/www/html/
+  "63":
+    name: htz-jack-lamila
+    ip: 37.27.83.54
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home/
+      - /var/www/html/

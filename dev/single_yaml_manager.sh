@@ -8,6 +8,11 @@
 
 
 YAML_FILE="./local.yaml"
+SINGLE_BACKUP_YAML="single.yml"
+
+SINGLE_SERVER_BACKUP_SCRIPT="/backup/scripts/custom_servers_backup/dev/single_custom_server_backup.sh"
+
+
 YAML_BACKUP_DIR="/root/athul/custom_servers_script/yml/yaml_backup"
 
 FZF_PATH="/usr/bin/fzy"
@@ -65,7 +70,14 @@ set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
 if [[ $# -eq 0 ]]; then
       echo "Listing currently listed servers in $YAML_FILE"
-      list_servers
+      server_details="$(list_servers)"
+      echo "$server_details"
+      exit
+      echo "Saving server details to ${SINGLE_BACKUP_YAML}..."
+      echo "${TOP_KEY}:" > ${SINGLE_BACKUP_YAML}
+      echo "${server_details}" >> ${SINGLE_BACKUP_YAML}
+      /bin/bash ${SINGLE_SERVER_BACKUP_SCRIPT} "${SINGLE_BACKUP_YAML}"
+
 fi
 
 

@@ -45,6 +45,12 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       shift # past value
       ;;
+    -s|--single)
+      SINGLE="$2"
+      single_server_backup
+      shift # past argument
+      shift # past value
+      ;;
     --default)
       DEFAULT=YES
       shift # past argument

@@ -1,0 +1,21 @@
+name: Vultr-mlm
+ip: 139.84.143.214
+port: "22"
+dbtype: MYSQL
+configs:
+  - /etc/apache2
+  - /etc/httpd
+  - /etc/httpd.conf
+  - /etc/mysql/my.cnf
+  - /etc/alternatives/my.cnf
+  - /etc/mysql/mysql.cnf
+  - /etc/nginx
+  - /etc/varnish
+  - /etc/redis
+  - /etc/postgresql/
+  - /var/lib/pgsql/data/postgresql.conf
+databases: ' '
+db_excludes: ' '
+files:
+  - /var/www
+  - /home
