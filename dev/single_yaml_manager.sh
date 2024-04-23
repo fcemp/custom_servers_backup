@@ -8,7 +8,7 @@
 
 
 YAML_FILE="./local.yaml"
-SINGLE_BACKUP_YAML="single.yml"
+SINGLE_BACKUP_YAML="/backup/scripts/custom_servers_backup/dev/single.yml"
 
 SINGLE_SERVER_BACKUP_SCRIPT="/backup/scripts/custom_servers_backup/dev/single_custom_server_backup.sh"
 
@@ -27,6 +27,10 @@ YAML_PARSE_FUNCTIONS_PATH="/backup/scripts/includes"
 TOP_KEY="servers"
 LAST_KEY=$(cat $YAML_FILE| $YQ_PATH e '.servers|keys'|tail -1 |tr "-" " " | xargs)
 NEW_KEY=$(($LAST_KEY + 1))
+
+
+
+
 
 
 
@@ -74,7 +78,9 @@ if [[ $# -eq 0 ]]; then
       echo "$server_details"
         spacing="    "
       echo "Saving server details to ${SINGLE_BACKUP_YAML}..."
+      server_id_spacing="  "
       echo "${TOP_KEY}:" > ${SINGLE_BACKUP_YAML}
+      echo "${server_id_spacing}"${LAST_KEY}":" >> ${SINGLE_BACKUP_YAML}
 	while read line; do
 		echo "${spacing}${line}" >> ${SINGLE_BACKUP_YAML}
 	done < <(echo "$server_details")

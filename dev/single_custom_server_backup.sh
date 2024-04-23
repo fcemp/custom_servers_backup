@@ -20,9 +20,6 @@ else
 fi
 
 
-echo "Yaml file:"
-echo "${YAML_FILE}"
-cat ${YAML_FILE}
 
 
 
