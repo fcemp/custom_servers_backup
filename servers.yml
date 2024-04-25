@@ -903,7 +903,8 @@ servers:
     db_excludes:
       - ""
     files:
-      - ""
+      - /home/
+      - /var/www/html/
   "62":
     name: htz-kiras-mikel
     ip: 37.27.34.209

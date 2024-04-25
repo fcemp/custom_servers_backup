@@ -73,8 +73,15 @@ set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
 
 if [[ $# -eq 0 ]]; then
-      echo "Listing currently listed servers in $YAML_FILE"
       server_details="$(list_servers)"
+	if [[ -z "${server_details// }" ]]; then
+
+		echo "[!] No Server Specified."
+		echo "[!] Exiting.."
+		exit
+	fi
+
+      echo "Listing currently listed servers in $YAML_FILE"
       echo "$server_details"
         spacing="    "
       echo "Saving server details to ${SINGLE_BACKUP_YAML}..."
@@ -84,8 +91,6 @@ if [[ $# -eq 0 ]]; then
 	while read line; do
 		echo "${spacing}${line}" >> ${SINGLE_BACKUP_YAML}
 	done < <(echo "$server_details")
-	cat ${SINGLE_BACKUP_YAML}
-	exit
       /bin/bash ${SINGLE_SERVER_BACKUP_SCRIPT} "${SINGLE_BACKUP_YAML}"
 
 fi
