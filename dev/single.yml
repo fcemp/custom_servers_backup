@@ -1,3 +1,10 @@
 servers:
   63:
-    
+    name: htz-mike
+    ip: 78.47.102.194
+    port: "22"
+    dbtype: MYSQL
+    configs:
+    - ""
+    databases: ' '
+    db_excludes: ' '

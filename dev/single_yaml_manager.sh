@@ -81,8 +81,29 @@ if [[ $# -eq 0 ]]; then
 		exit
 	fi
 
+      yes_or_no 'take backup of JUST this server now ?' '[*] Saving the single server backup now to '
+
+      if [[ "$?" == "1" ]]; then
+		echo "[!] Exiting due to user entering no."
+		exit
+       fi
+
+
       echo "Listing currently listed servers in $YAML_FILE"
+      echo "Taking backup of the following server:"
+      echo "==============================================="
+      echo ""
+      echo ""
+
       echo "$server_details"
+      echo "==============================================="
+      echo ""
+      echo ""
+      echo "==============================================="
+      echo "Backup Logs:"
+      echo "==============================================="
+      echo ""
+
         spacing="    "
       echo "Saving server details to ${SINGLE_BACKUP_YAML}..."
       server_id_spacing="  "
