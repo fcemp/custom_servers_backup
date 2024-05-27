@@ -935,3 +935,5 @@ servers:
     db_excludes: ' '
     files:
       - /home/
+      - /usr/local/hestia/
+      - /etc/

@@ -891,6 +891,30 @@ servers:
     files:
       - /home
       - /var/www/html
+  "70":
+    name: hcp.pocketcreations.in
+    ip: 116.202.11.195
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home/
+      - /usr/local/hestia/
+      - /etc/
   "71":
     name: vultr-echeapflights
     ip: 95.179.200.34
@@ -913,25 +937,3 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "72":
-    name: hcp.pocketcreations.in
-    ip: 116.202.11.195
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home/

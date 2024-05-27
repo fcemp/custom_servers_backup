@@ -338,6 +338,27 @@ servers:
     files:
       - /home
       - ""
+  "34":
+    name: vultr-echeapflights
+    ip: 95.179.200.34
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/mysql.cnf
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
   "35":
     name: Vultr-race-energy
     ip: 139.84.131.110
@@ -891,47 +912,3 @@ servers:
     files:
       - /home
       - /var/www/html
-  "71":
-    name: vultr-echeapflights
-    ip: 95.179.200.34
-    port: "22"
-    dbtype: POSTGRESQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-  "72":
-    name: hcp.pocketcreations.in
-    ip: 116.202.11.195
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home/
