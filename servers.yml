@@ -2062,3 +2062,59 @@ servers:
     db_excludes: ' '
     files:
       - /home
+  "175":
+    name: PC-Production
+    ip: 128.140.125.14
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "176":
+    name: Vanguard-Koala
+    ip: 168.119.229.172
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
