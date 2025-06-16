@@ -1907,9 +1907,9 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "169":
-    name: Unshakable-Owl
-    ip: 65.20.81.65
+  "170":
+    name: Inscape
+    ip: 116.203.230.122
     port: "22"
     dbtype: MYSQL
     dbuser: root
@@ -1918,25 +1918,91 @@ servers:
     dbport: "3306"
     configs:
       - /etc/apache2
-      - /etc/apache2
       - /etc/httpd
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/httpd
-      - /etc/httpd.conf
       - /etc/httpd.conf
       - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
       - /etc/alternatives/my.cnf
       - /etc/mysql
       - /etc/nginx
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/nginx
-      - /etc/redis
       - /etc/varnish
       - /etc/redis
       - /etc/postgresql/
       - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "171":
+    name: Subhag
+    ip: 91.99.148.244
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /home
+  "172":
+    name: Unbreakable-Turtle
+    ip: 91.99.116.140
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
