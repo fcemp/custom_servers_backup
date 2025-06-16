@@ -1,1 +1,3 @@
-yml/yaml_backup/servers.yml.*
+yml/yaml_backup/*
+*.bak
+
