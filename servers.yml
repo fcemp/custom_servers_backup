@@ -1,17 +1,4 @@
 servers:
-  1:
-    name: server1.flexicloud.in
-    ip: 195.201.40.238
-    port: 22
-    dbtype: MYSQL
-    configs:
-      - /etc/nginx
-      - /etc/mysql/my.cnf
-      - /etc/redis
-    database:
-    db_excludes:
-    files:
-      - /var/www
   3:
     name: server1.letourister.com
     ip: 159.69.144.148
@@ -49,21 +36,7 @@ servers:
     database:
     db_excludes:
     files:
-      - /var/nodeproject
-  6:
-    name: server1.shop2m.com
-    ip: 134.209.147.197
-    port: 22
-    dbtype: MYSQL
-    configs:
-      - /etc/nginx
-      - /etc/apache2
-      - /etc/mysql
-    database:
-    db_excludes:
-    files:
-      - /var/www
-      - /home/mongobackups
+      - /var/
   8:
     name: fleet-app
     ip: 23.88.59.158
@@ -92,21 +65,6 @@ servers:
     db_excludes:
     files:
       - /var/www
-  "13":
-    name: web.orendapay.com
-    ip: 139.59.15.201
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/nginx
-      - /etc/mysql/my.cnf
-      - /etc/redis
-    databases: ' '
-    db_excludes:
-    files:
-      - /var/www
-      - /etc/mysql
   "14":
     name: web1.forexplatinumtrading.com
     ip: 45.76.118.20
@@ -155,43 +113,6 @@ servers:
     db_excludes:
     files:
       - /home
-  "20":
-    name: vultr-fc-web
-    ip: 95.179.203.174
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-    databases:
-      - bukstk_db43
-    db_excludes:
-    files:
-      - /home/bukstackdocumentatie-cyvhe/bukstackdocumentatie.flexicloud.in/BookStack
-  "22":
-    name: vultr-jeniestore
-    ip: 139.84.136.79
-    port: "22"
-    dbtype: POSTGRESQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-      - /var/www
   "25":
     name: htz-simplifiedcoding
     ip: 94.130.26.21
@@ -317,81 +238,6 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "44":
-    name: htz-pjjfruits
-    ip: 128.140.99.56
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - ""
-      - ""
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-  "45":
-    name: vultr-satyaharaerp
-    ip: 139.84.138.109
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-  "46":
-    name: vultr-damangames-new
-    ip: 139.84.156.173
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-  "47":
-    name: server.brianfuel.io
-    ip: 37.27.40.217
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
   "48":
     name: DO-paul-alukkas-
     ip: 143.110.250.49
@@ -434,28 +280,6 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "51":
-    name: vultr-es-ambcrypto-com
-    ip: 208.85.17.70
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-      - /var/www
   "52":
     name: vultr-dev-vetpd
     ip: 192.248.162.237
@@ -522,28 +346,6 @@ servers:
     files:
       - /home
       - /var/www
-  "60":
-    name: vultr-db-es-amb-temp
-    ip: 65.20.102.252
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home/
   "64":
     name: DB-vultr-es-ambcrypto
     ip: 208.76.221.186
@@ -569,28 +371,6 @@ servers:
   "65":
     name: LB-vultr-es-ambcrypto
     ip: 208.85.17.37
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-  "66":
-    name: Redis-vultr-es-ambcrypto
-    ip: 65.20.100.21
     port: "22"
     dbtype: MYSQL
     configs:
@@ -778,44 +558,11 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "78":
-    name: ambcrypto-redis-test
-    ip: 149.28.223.119
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
   "79":
     name: htz-magellanseafoods
     ip: 142.132.186.102
     port: "22"
     dbtype: POSTGRESQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
-  "82":
-    name: server-mahalakshmisilks-com
-    ip: 65.20.88.79
-    port: "22"
-    dbtype: MYSQL
     configs:
       - /etc/apache2
       - /etc/httpd
@@ -878,28 +625,6 @@ servers:
     files:
       - /home
       - /var/www
-  "85":
-    name: vultr-mlm-pixel-healthy
-    ip: 139.84.135.36
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
   "86":
     name: edure-python-htz
     ip: 188.245.70.33
@@ -1072,17 +797,6 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "96":
-    name: htz-stakque
-    ip: 37.27.44.244
-    port: "22"
-    dbtype: MYSQL
-    configs:
-      - ""
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home/
   "97":
     name: htz-sscegov
     ip: 65.108.247.141
@@ -1118,75 +832,9 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "99":
-    name: illustrake
-    ip: 20.244.95.173
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home
   "100":
     name: mernapp-edure
     ip: 49.12.186.193
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-  "101":
-    name: linode-nanoschool-mongodb
-    ip: 172.232.123.51
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-  "103":
-    name: server1
-    ip: 134.209.147.197
     port: "22"
     dbtype: MONGO
     configs:
@@ -1250,28 +898,6 @@ servers:
       - /etc
     databases: ' '
     db_excludes: ' '
-  "108":
-    name: web-wallet
-    ip: 45.76.8.76
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
   "111":
     name: server.dreambridge.global
     ip: 45.79.122.119
@@ -1294,110 +920,6 @@ servers:
       - /etc
     databases: ' '
     db_excludes: ' '
-  "112":
-    name: htz-airpmo-mongo
-    ip: 157.90.31.46
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-  "113":
-    name: vultr-callforblessing-healthy-mongo
-    ip: 65.20.69.2
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-  "114":
-    name: vultr-mlm-pixel-healthy-mongo
-    ip: 139.84.135.36
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-  "115":
-    name: node-pgsql-htz
-    ip: 159.69.240.111
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - /etc/apache2
-      - /etc/httpd
-      - /etc/httpd.conf
-      - /etc/mysql/my.cnf
-      - /etc/alternatives/my.cnf
-      - /etc/mysql
-      - /etc/nginx
-      - /etc/varnish
-      - /etc/redis
-      - /etc/postgresql/
-      - /var/lib/pgsql/data/postgresql.conf
-      - /etc/mongod.conf
-      - /usr/local/hestia
-      - /etc
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home/
-      - /var/www/
-      - ""
-  "116":
-    name: htz-thecqube
-    ip: 65.108.208.200
-    port: "22"
-    dbtype: MONGO
-    configs:
-      - ""
-      - ""
-    databases: ' '
-    db_excludes: ' '
-    files:
-      - /home/
   "117":
     name: htz-nodeproject.dev
     ip: 188.34.164.54
@@ -1422,9 +944,293 @@ servers:
     db_excludes: ' '
     files:
       - /home
-  "118":
-    name: web-wallet-mongo
-    ip: 45.76.8.76
+  "121":
+    name: htz-staging-vibezteam
+    ip: 37.27.186.187
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - ""
+  "122":
+    name: vultr-ambcrypto-mongodb
+    ip: 144.202.110.152
+    port: "22"
+    dbtype: MONGO
+    configs:
+      - /etc
+      - /usr/local/hestia
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "123":
+    name: santhi-mysql
+    ip: 78.46.210.25
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+  "124":
+    name: htz-tapseed-mysql
+    ip: 95.216.217.3
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+  "125":
+    name: Htz-datewave
+    ip: 37.27.95.73
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /var/www/
+  "127":
+    name: htz-bwoomall
+    ip: 37.27.206.14
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - ""
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - ""
+  "128":
+    name: htz-server-jjsangamam
+    ip: 95.217.134.223
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "131":
+    name: htz-nanoskool-chatbot
+    ip: 95.217.239.94
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "132":
+    name: WS1-vibezteam
+    ip: 135.181.192.241
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "133":
+    name: WS2-vibezteam
+    ip: 37.27.240.123
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "134":
+    name: WS3-vibezteam
+    ip: 37.27.88.86
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "135":
+    name: WS4-vibezteam
+    ip: 135.181.84.78
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "136":
+    name: LB-vibezteam
+    ip: 95.216.154.45
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "137":
+    name: PGSQL-DB-vibezteam
+    ip: 37.27.186.187
+    port: "22"
+    dbtype: POSTGRESQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "138":
+    name: htz-nanoskool-mongodb
+    ip: 65.109.132.29
     port: "22"
     dbtype: MONGO
     configs:
@@ -1444,11 +1250,13 @@ servers:
       - /etc
     databases: ' '
     db_excludes: ' '
-  "119":
-    name: vultr-callforblessing-mongo
-    ip: 65.20.69.2
+    files:
+      - /home
+  "140":
+    name: vultr-ambcrypto-mysql8
+    ip: 45.77.7.145
     port: "22"
-    dbtype: MONGO
+    dbtype: MYSQL
     configs:
       - /etc/apache2
       - /etc/httpd
@@ -1466,8 +1274,65 @@ servers:
       - /etc
     databases: ' '
     db_excludes: ' '
-  "120":
-    name: vultr-mlm-pixel-mongo
+    files:
+      - /home/
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+  "141":
+    name: htz-nanoskool-chatbot
+    ip: 138.199.203.253
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /var/www/
+      - /home/
+  "142":
+    name: htz-pjjfruits
+    ip: 128.140.99.56
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "143":
+    name: vultr-mlm-pixel-healthy-mongo
     ip: 139.84.135.36
     port: "22"
     dbtype: MONGO
@@ -1488,14 +1353,590 @@ servers:
       - /etc
     databases: ' '
     db_excludes: ' '
-  "121":
-    name: htz-staging-vibezteam
-    ip: 37.27.186.187
+  "144":
+    name: server1.shop2m.com
+    ip: 134.209.147.197
     port: "22"
-    dbtype: POSTGRESQL
+    dbtype: MYSQL
     configs:
-      - /etc/
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
     databases: ' '
     db_excludes: ' '
     files:
+      - /home
+      - /var/www
+  "145":
+    name: server1.shop2m.com
+    ip: 134.209.147.197
+    port: "22"
+    dbtype: MYSQL
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /var
+  "147":
+    name: web1-mypreamble
+    ip: 49.12.193.16
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "148":
+    name: web2-mypreamble
+    ip: 49.13.228.95
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "149":
+    name: web3-mypreamble
+    ip: 116.203.22.133
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "150":
+    name: web4-mypreamble
+    ip: 94.130.173.149
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "151":
+    name: LB-mypreamble
+    ip: 94.130.151.3
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "152":
+    name: DB-mypreamble
+    ip: 195.201.41.215
+    port: "22"
+    dbtype: POSTGRESQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "153":
+    name: web.orendapay.com
+    ip: 139.59.15.201
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /var/www
+  "154":
+    name: vultr-mlm-pixel-healthy
+    ip: 139.84.135.36
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - /var/www
+  "155":
+    name: web-wallet-Mongo
+    ip: 45.76.8.76
+    port: "22"
+    dbtype: MONGO
+    dbuser: tsv_chat
+    dbpass: hjwfbwkjik
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases:
       - ""
+    db_excludes: ' '
+    files:
+      - /opt/Mongo_Backup
+  "156":
+    name: vultr-mlm-pixel-healthy-psql
+    ip: 139.84.135.36
+    port: "22"
+    dbtype: POSTGRESQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+  "158":
+    name: htz-hitechmedgas-hcp
+    ip: 188.245.253.173
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home/
+  "159":
+    name: htz-odoo-new
+    ip: 91.99.53.43
+    port: "22"
+    dbtype: POSTGRESQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home/
+  "160":
+    name: zappfresh-azure
+    ip: 20.244.95.173
+    port: "22"
+    dbtype: MONGO
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+      - ""
+  "161":
+    name: htz-thegot.co.uk
+    ip: 91.99.0.123
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "163":
+    name: htz-amitaeyecare
+    ip: 91.99.66.117
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "166":
+    name: htz-nanoskool-chatbot-new-mongo
+    ip: 138.199.203.253
+    port: "22"
+    dbtype: MONGO
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+  "167":
+    name: shop2m-new
+    ip: 64.227.178.163
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "168":
+    name: shop2m-new
+    ip: 64.227.178.163
+    port: "22"
+    dbtype: MONGO
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
+  "169":
+    name: Unshakable-Owl
+    ip: 65.20.81.65
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/nginx
+      - /etc/redis
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf

@@ -6,7 +6,7 @@
 DEST_DIR_PREFIX="/backup/custom_servers"
 YAML_FILE="/backup/scripts/custom_servers_backup/servers.yml"
 INCLUDES_DIR="/backup/scripts/includes"
-KEEP_BACKUPS_FOR=12
+KEEP_BACKUPS_FOR=9
 
 
 

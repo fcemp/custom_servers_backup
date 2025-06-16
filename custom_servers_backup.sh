@@ -27,6 +27,10 @@ for i in $(get_server_list); do
 	DB_EXCLUDES=$(get_database_exclusions $i )
 	
 	
+	DB_USER="$(get_db_user $i)"
+	DB_PASS="$(get_db_pass $i)"
+	DB_HOST="$(get_db_host $i)"
+	DB_PORT="$(get_db_port $i)"
 	
 	echo "DATABASES: ${DATABASES[@]}"
 
@@ -40,7 +44,7 @@ for i in $(get_server_list); do
 	if ! $(echo "$DB_EXCLUDES" | grep -wiq "Null") ; then
 		if $(echo "$DATABASES" | grep -wiq "Null") ; then
 			# get db list from remote, populate $databases and exclude the $db_exclude from $databases
-			temp_db_list=$(list_remote_db $IP $PORT $SERVER_NAME $DBTYPE)
+			temp_db_list=$(list_remote_db $IP $PORT $SERVER_NAME $DBTYPE $DB_USER $DB_PASS $DB_HOST $DB_PORT )
 			DATABASES=("${temp_db_list[@]}")
 		fi
 			#echo "Not Null. Value : ${DB_EXCLUDES[@]}"
@@ -57,11 +61,11 @@ for i in $(get_server_list); do
 		echo "$(date +'%d-%m-%Y %T') - No specific database mentioned. Starting to dump all databases..."
 		# Database Dump and Sync
 		#dbdump $IP $PORT $SERVER_NAME "$DEST_DIR_PREFIX/$SERVER_NAME/database/$TODAY" 
-		dbdump $IP $PORT $SERVER_NAME "$DEST_DIR_PREFIX/$SERVER_NAME/database/$TODAY"  $DBTYPE 
+		dbdump $IP $PORT $SERVER_NAME "$DEST_DIR_PREFIX/$SERVER_NAME/database/$TODAY"  $DBTYPE  $DB_USER $DB_PASS $DB_HOST $DB_PORT
         else
 		echo "$(date +'%d-%m-%Y %T') - Specific databases mentioned. Dumping only the mentioned databases..."
 		for db in $DATABASES; do 
-			dbdump_single $IP $PORT $SERVER_NAME "$DEST_DIR_PREFIX/$SERVER_NAME/database/$TODAY" "$db" $DBTYPE
+			dbdump_single $IP $PORT $SERVER_NAME "$DEST_DIR_PREFIX/$SERVER_NAME/database/$TODAY" "$db" $DBTYPE $DB_USER $DB_PASS $DB_HOST $DB_PORT
 		done
         fi
 
