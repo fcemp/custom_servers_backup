@@ -1,3 +1,5 @@
 yml/yaml_backup/*
 *.bak
+mongo_servers.yml
+single.yml
 
