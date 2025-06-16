@@ -1,7 +1,0 @@
-17-11-2023 17:21:10 - Starting backup of Vultr-thescanner-live-149.28.158.253 (149.28.158.253:22)
-17-11-2023 17:21:10 - Taking Database dump of 149.28.158.253:22 to /backup/scripts/custom_servers_backup/test/backup/Vultr-thescanner-live-149.28.158.253/database/20231117
-17-11-2023 17:21:13 - Taking backup of database appwallet_helper_db from 149.28.158.253 to /backup/scripts/custom_servers_backup/test/backup/Vultr-thescanner-live-149.28.158.253/database/20231117
-17-11-2023 17:21:27 - Backup of database appwallet_helper_db from 149.28.158.253 have been saved to /backup/scripts/custom_servers_backup/test/backup/Vultr-thescanner-live-149.28.158.253/database/20231117
-17-11-2023 17:21:27 - Taking backup of database beta_scanr_db_NOT_USED from 149.28.158.253 to /backup/scripts/custom_servers_backup/test/backup/Vultr-thescanner-live-149.28.158.253/database/20231117
-17-11-2023 17:22:59 - Backup of database beta_scanr_db_NOT_USED from 149.28.158.253 have been saved to /backup/scripts/custom_servers_backup/test/backup/Vultr-thescanner-live-149.28.158.253/database/20231117
-17-11-2023 17:22:59 - Taking backup of database helper_23 from 149.28.158.253 to /backup/scripts/custom_servers_backup/test/backup/Vultr-thescanner-live-149.28.158.253/database/20231117
