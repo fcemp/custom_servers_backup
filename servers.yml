@@ -2034,3 +2034,31 @@ servers:
     db_excludes: ' '
     files:
       - /home
+  "174":
+    name: PC-Staging-01
+    ip: 5.75.240.121
+    port: "22"
+    dbtype: MYSQL
+    dbuser: root
+    dbpass: ""
+    dbhost: 127.0.0.1
+    dbport: "3306"
+    configs:
+      - /etc/apache2
+      - /etc/httpd
+      - /etc/httpd.conf
+      - /etc/mysql/my.cnf
+      - /etc/alternatives/my.cnf
+      - /etc/mysql
+      - /etc/nginx
+      - /etc/varnish
+      - /etc/redis
+      - /etc/postgresql/
+      - /var/lib/pgsql/data/postgresql.conf
+      - /etc/mongod.conf
+      - /usr/local/hestia
+      - /etc
+    databases: ' '
+    db_excludes: ' '
+    files:
+      - /home
